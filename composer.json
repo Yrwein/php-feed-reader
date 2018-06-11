@@ -1,0 +1,25 @@
+{
+  "name": "josef.cech/feed-reader",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Josef Cech",
+      "email": "czech.josef@gmail.com"
+    }
+  ],
+  "require": {
+    "symfony/console": "^4.1",
+    "guzzlehttp/guzzle": "^6.3",
+    "symfony/serializer": "^4.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.2",
+    "mockery/mockery": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "FeedReader\\": "src/"
+    }
+  }
+}
