@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Test feed 1",
+    "url": "http://example.com"
+  },
+  {
+    "name": "Test feed 2",
+    "url": "http://google.com"
+  }
+]
