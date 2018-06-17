@@ -22,6 +22,18 @@ class Article
     private $content;
 
     /**
+     * @param string $title
+     * @param \DateTime $published
+     * @param string $content
+     */
+    public function __construct(string $title, \DateTime $published, string $content)
+    {
+        $this->title = $title;
+        $this->published = $published;
+        $this->content = $content;
+    }
+
+    /**
      * @return string
      */
     public function getTitle(): string

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:php="http://php.net/ns/news" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>PHP.net news &amp; announcements</title>
+    <updated>2018-06-13T07:00:51-05:00</updated>
+    <link href="http://www.php.net/feed.atom" rel="self"/>
+    <icon>http://php.net/images/news/php-logo.gif</icon>
+    <id>http://php.net/archive/index.php</id>
+    <author>
+        <name>Webmaster</name>
+        <uri>http://php.net/contact</uri>
+        <email>php-webmaster@lists.php.net</email>
+    </author>
+    <entry xmlns="http://www.w3.org/2005/Atom" xmlns:default="http://php.net/ns/news"
+           xml:base="entries/2018-06-13-1.xml">
+        <title>php[world] 2018 - Call for Speakers</title>
+        <id>http://php.net/archive/2018.php#id2018-06-13-1</id>
+        <published>2018-06-13T12:00:51+00:00</published>
+        <updated>2018-06-13T12:00:51+00:00</updated>
+        <default:finalTeaserDate xmlns="http://php.net/ns/news">2018-07-22</default:finalTeaserDate>
+        <category term="cfp" label="Call for Papers"/>
+        <link href="http://php.net/conferences/index.php#id2018-06-13-1" rel="alternate" type="text/html"/>
+        <default:newsImage xmlns="http://php.net/ns/news" link="https://world.phparch.com/" title="php[world] 2018">
+            world2018blue-300px.png
+        </default:newsImage>
+        <link href="https://world.phparch.com/" rel="via" type="text/html"/>
+        <content type="xhtml">
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>The teams at <a href="https://www.phparch.com">php[architect]</a> and
+                    <a href="http://www.oneforall.events" title="One for All Events">One for All Events</a>
+                    are excited to announce we have opened up our
+                    <a href="https://world.phparch.com/call-for-speakers/?paref=phpnet&amp;utm_campaign=phpnet">Call for
+                        Speakers
+                    </a>
+                    for the 5th annual <a href="https://world.phparch.com/?paref=phpnet&amp;utm_campaign=phpnet">
+                        php[world]</a>.
+                </p>
+
+                <p>This year we are wanting to provide our attendees deep-dive content which teach core lessons about
+                    PHP. We also want talks covering
+                    advanced topics in applications and frameworks built in PHP (such as Drupal, WordPress, Laravel,
+                    Symfony, and Magento).
+                    We encourage submissions on technologies crucial to modern Web development such as HTML5,
+                    JavaScript, and emerging technologies.
+                    Ideas surrounding the entire software life cycle are often big hits for our attendees. Finally, we
+                    do welcome non-technical
+                    proposals that will appeal to a developer audience.
+                </p>
+
+                <p>Like last year, we will be a 2-day conference with concurrent workshops, preceded by two days of
+                    training classes.
+                    Also like last year, we will have our comprehensive speaker package available which includes:
+                </p>
+
+                <ul>
+                    <li>A free conference ticket</li>
+                    <li>Round-trip economy airfare booked by us</li>
+                    <li>Accommodations at the conference hotel:
+                        <ul>
+                            <li>3 nights for speakers</li>
+                            <li>5 nights for training teachers</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p>Don't hesitate, the
+                    <a href="https://world.phparch.com/call-for-speakers/?paref=phpnet&amp;utm_campaign=phpnet">Call for
+                        Speakers
+                    </a>
+                    is only open until July 22nd. So get those submissions in soon, we look forward to hearing from you!
+                </p>
+
+            </div>
+        </content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom" xmlns:default="http://php.net/ns/news"
+           xml:base="entries/2018-06-11-1.xml">
+        <title>LaravelConf Taiwan 2018</title>
+        <id>http://php.net/archive/2018.php#id2018-06-11-1</id>
+        <published>2018-06-11T11:00:00+00:00</published>
+        <updated>2018-06-11T11:00:00+00:00</updated>
+        <default:finalTeaserDate xmlns="http://php.net/ns/news">2018-07-08</default:finalTeaserDate>
+        <category term="conferences" label="Conference announcement"/>
+        <link href="http://php.net/conferences/index.php#id2018-06-11-1" rel="alternate" type="text/html"/>
+        <default:newsImage xmlns="http://php.net/ns/news" link="https://laravelconf.tw/"
+                           title="LaravelConf Taiwan 2018">LaravelConfTaiwan_2018.jpg
+        </default:newsImage>
+        <link href="https://laravelconf.tw/" rel="via" type="text/html"/>
+        <content type="xhtml">
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>As the biggest PHP and Laravel community in Taiwan, we are proud to announce <a
+                        href="https://laravelconf.tw/">LaravelConf Taiwan
+                </a> will take place on July 8, 2018.
+                </p>
+                <p>Come and enjoy inspirational talks and making friends with enthusiastic developers like you!</p>
+                <br/>
+                <p>Date: July 8, 2018</p>
+                <p>Location: No. 11, Zhongshan South Road, Zhongzheng District, Taipei City, 100 Taiwan</p>
+                <br/>
+                <p>Check out <a href="https://laravelconf.tw/">more information</a> and get your <a
+                        href="https://laravel-dojo.kktix.cc/events/laravelconftw2018">ticket
+                </a> now!
+                </p>
+            </div>
+        </content>
+    </entry>
+    <entry xmlns="http://www.w3.org/2005/Atom" xml:base="entries/2018-06-07-1.xml">
+        <title>PHP 7.3.0 alpha 1 Released</title>
+        <id>http://php.net/archive/2018.php#id2018-06-07-1</id>
+        <published>2018-06-07T18:36:37+00:00</published>
+        <updated>2018-06-07T18:36:37+00:00</updated>
+        <category term="frontpage" label="PHP.net frontpage news"/>
+        <link href="http://php.net/index.php#id2018-06-07-1" rel="alternate" type="text/html"/>
+        <link href="http://php.net/archive/2018.php#id2018-06-07-1" rel="via" type="text/html"/>
+        <content type="xhtml">
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                <p>
+                    PHP team is glad to announce the release of the first PHP 7.3.0 version, PHP 7.3.0 Alpha 1.
+                    This starts the PHP 7.3 release cycle, the rough outline of which is specified in the
+                    <a href="https://wiki.php.net/todo/php73">PHP Wiki</a>.
+                </p>
+
+                <p>For source downloads of PHP 7.3.0 Alpha 1 please visit the <a
+                        href="https://downloads.php.net/~stas/">download page</a>.
+                </p>
+
+                <p>
+                    Please carefully test this version and report any issues found in the <a
+                        href=" http://bugs.php.net">bug reporting system</a>.
+                </p>
+
+                <p>
+                    <b>Please DO NOT use this version in production, it is an early test version.</b>
+                </p>
+
+                <p>
+                    For more information on the new features and other changes, you can read the
+                    <a href="https://github.com/php/php-src/blob/php-7.3.0alpha1/NEWS">NEWS</a>
+                    file,
+                    or the
+                    <a href="https://github.com/php/php-src/blob/php-7.3.0alpha1/UPGRADING">UPGRADING</a>
+                    file for a complete list of upgrading notes. These files can also be found in the release archive.
+                </p>
+
+                <p>
+                    The next release would be Alpha 2, planned for June 21.
+                </p>
+
+                <p>The signatures for the release can be found in <a
+                        href="https://gist.github.com/smalyshev/b0994d4dd138007237911429702ee040">the manifest
+                </a> or on <a href="https://qa.php.net/">the QA site</a>.
+                </p>
+
+                <p>Thank you for helping us make PHP better.</p>
+            </div>
+        </content>
+    </entry>
+</feed>

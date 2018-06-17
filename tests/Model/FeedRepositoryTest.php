@@ -11,7 +11,7 @@ class FeedRepositoryTest extends TestCase
 {
     public function testGetFeeds()
     {
-        $repo = new FeedRepository(__DIR__ . '/../_fixtures/testfeeds.json');
+        $repo = new FeedRepository(ROOT_DIR . '/tests/_fixtures/testfeeds.json');
         $feeds = $repo->getFeeds();
 
         $this->assertCount(2, $feeds);
@@ -23,7 +23,7 @@ class FeedRepositoryTest extends TestCase
 
     public function testGetFeeds_ShouldKickRuntimeException_OnNotFoundFile()
     {
-        $notExistingFeedFile = __DIR__ . '/../_fixtures/doesnotexists.json';
+        $notExistingFeedFile = ROOT_DIR . '/tests/_fixtures/doesnotexists.json';
         $this->expectException(\RuntimeException::class);
         $this->expectExceptionMessage('Feed config file does not exists: ' . $notExistingFeedFile);
 
