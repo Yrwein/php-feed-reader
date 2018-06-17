@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace FeedReader;
 
-use FeedReader\Model\Article;
 use FeedReader\Model\Feed;
+use FeedReader\Parser\FeedParser;
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\CurlMultiHandler;
 use GuzzleHttp\HandlerStack;
@@ -48,9 +48,9 @@ class FeedDownloadClient
     {
         $downloadPromise = $this->client->getAsync($feed->getUrl());
         $articlePromise = $downloadPromise->then(
-            function (Response $response) {
+            function (Response $response) use ($feed) {
                 $xml = (string) $response->getBody();
-                return $this->feedParser->parseFeedToArticles($xml);
+                return $this->feedParser->parseFeedToArticles($feed, $xml);
             }
         );
         return $articlePromise;

@@ -22,15 +22,22 @@ class Article
     private $content;
 
     /**
+     * @var Feed
+     */
+    private $feed;
+
+    /**
      * @param string $title
      * @param \DateTime $published
      * @param string $content
+     * @param Feed $feed
      */
-    public function __construct(string $title, \DateTime $published, string $content)
+    public function __construct(string $title, \DateTime $published, string $content, Feed $feed)
     {
         $this->title = $title;
         $this->published = $published;
         $this->content = $content;
+        $this->feed = $feed;
     }
 
     /**
@@ -55,5 +62,13 @@ class Article
     public function getContent(): string
     {
         return $this->content;
+    }
+
+    /**
+     * @return Feed
+     */
+    public function getFeed(): Feed
+    {
+        return $this->feed;
     }
 }

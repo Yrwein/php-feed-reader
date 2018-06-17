@@ -7,6 +7,7 @@ namespace FeedReader;
 use FeedReader\Model\Article;
 use FeedReader\Model\Feed;
 use FeedReader\Model\FeedRepository;
+use FeedReader\Parser\SmartParser;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -50,7 +51,11 @@ class FeedReaderCommand extends Command
         $output->writeln('The last twenty articles:');
         $articles = array_slice($articles, 0, 20);
         foreach ($articles as $article) {
-            $output->writeln($article->getTitle() . ': ' . $article->getPublished()->format('Y-m-d H:i'));
+            $output->writeln(
+                $article->getFeed()->getName() . ': '
+                . $article->getTitle() . ' - '
+                . $article->getPublished()->format('Y-m-d H:i'))
+            ;
         }
     }
 
@@ -59,7 +64,7 @@ class FeedReaderCommand extends Command
      */
     private function buildFeedReader(): FeedReader
     {
-        $feedParser = new FeedParser();
+        $feedParser = new SmartParser();
         $feedDownloadClient = new FeedDownloadClient($feedParser);
         $feedReader = new FeedReader($feedDownloadClient);
         return $feedReader;

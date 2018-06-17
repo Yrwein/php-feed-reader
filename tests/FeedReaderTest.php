@@ -28,11 +28,11 @@ class FeedReaderTest extends TestCase
         $feedDownloadClient = m::mock(FeedDownloadClient::class);
         $feedDownloadClient
             ->shouldReceive('downloadArticles')->with($feed1)->once()->andReturn(promise_for([
-                article('2018-09-01'),
-                article('2018-03-01'),
+                article('2018-09-01', $feed1),
+                article('2018-03-01', $feed1),
             ]))
             ->shouldReceive('downloadArticles')->with($feed2)->once()->andReturn(promise_for([
-                article('2018-06-01'),
+                article('2018-06-01', $feed2),
             ]))
         ;
 
@@ -55,8 +55,8 @@ class FeedReaderTest extends TestCase
         $feedDownloadClient = m::mock(FeedDownloadClient::class);
         $feedDownloadClient
             ->shouldReceive('downloadArticles')->with($feed1)->once()->andReturn(promise_for([
-                article('2018-09-01'),
-                article('2018-03-01'),
+                article('2018-09-01', $feed1),
+                article('2018-03-01', $feed1),
             ]))
             ->shouldReceive('downloadArticles')->with($feed2)->once()->andReturn(rejection_for(
                 new \Exception('Foobar')
@@ -104,8 +104,8 @@ class FeedReaderTest extends TestCase
         $feedDownloadClient = m::mock(FeedDownloadClient::class);
         $feedDownloadClient
             ->shouldReceive('downloadArticles')->with($feed1)->once()->andReturn(promise_for([
-                article('2018-09-01'),
-                article('2018-03-01'),
+                article('2018-09-01', $feed1),
+                article('2018-03-01', $feed1),
             ]))
             ->shouldReceive('downloadArticles')->with($feed2)->once()->andReturn(rejection_for(
                 new \Exception('Foobar')
@@ -137,6 +137,6 @@ class FeedReaderTest extends TestCase
     }
 }
 
-function article(string $date): Article {
-    return new Article('', \DateTime::createFromFormat('Y-m-d', $date), '');
+function article(string $date, Feed $feed): Article {
+    return new Article('', \DateTime::createFromFormat('Y-m-d', $date), '', $feed);
 }
