@@ -18,7 +18,7 @@ class FeedReaderTest extends TestCase
 {
     use MockeryPHPUnitIntegration;
 
-    public function testOnFinish_ShouldNotifyWithSortedArticles_OnTwoSuccessResults()
+    public function testDownloadAll_ShouldReturnSortedArticles_OnTwoSuccessResults()
     {
         $feeds = [
             $feed1 = new Feed('', ''),
@@ -38,14 +38,14 @@ class FeedReaderTest extends TestCase
 
         $feedReader = new FeedReader($feedDownloadClient);
         /** @var Article[] $articles */
-        $articles = $feedReader->start($feeds)->wait();
+        $articles = $feedReader->downloadAll($feeds)->wait();
         $this->assertCount(3, $articles);
         $this->assertSame('2018-09-01', $articles[0]->getPublished()->format('Y-m-d'));
         $this->assertSame('2018-06-01', $articles[1]->getPublished()->format('Y-m-d'));
         $this->assertSame('2018-03-01', $articles[2]->getPublished()->format('Y-m-d'));
     }
 
-    public function testOnFinish_ShouldNotifyWithSortedArticles_OnOneSuccessAndOneFailure()
+    public function testDownloadAll_ShouldReturnSortedArticles_OnOneSuccessAndOneFailure()
     {
         $feeds = [
             $feed1 = new Feed('', ''),
@@ -65,13 +65,13 @@ class FeedReaderTest extends TestCase
 
         $feedReader = new FeedReader($feedDownloadClient);
         /** @var Article[] $articles */
-        $articles = $feedReader->start($feeds)->wait();
+        $articles = $feedReader->downloadAll($feeds)->wait();
         $this->assertCount(2, $articles);
         $this->assertSame('2018-09-01', $articles[0]->getPublished()->format('Y-m-d'));
         $this->assertSame('2018-03-01', $articles[1]->getPublished()->format('Y-m-d'));
     }
 
-    public function testOnFinish_ShouldNotifyWithEmptyArray_OnTwoFailures()
+    public function testDownloadAll_ShouldReturnEmptyArray_OnTwoFailures()
     {
         $feeds = [
             $feed1 = new Feed('', ''),
@@ -90,7 +90,7 @@ class FeedReaderTest extends TestCase
 
         $feedReader = new FeedReader($feedDownloadClient);
         /** @var Article[] $articles */
-        $articles = $feedReader->start($feeds)->wait();
+        $articles = $feedReader->downloadAll($feeds)->wait();
         $this->assertCount(0, $articles);
     }
 
@@ -126,7 +126,7 @@ class FeedReaderTest extends TestCase
         });
 
         /** @var Article[] $articles */
-        $articles = $feedReader->start($feeds)->wait();
+        $feedReader->downloadAll($feeds)->wait();
 
         $this->assertSame([
             ['start', 'feed 1'],

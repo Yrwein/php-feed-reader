@@ -43,7 +43,7 @@ class FeedReaderCommand extends Command
         $feedReader = $this->buildFeedReader();
 
         $this->addProgressEventListeners($output, $feedReader);
-        $articlesPromise = $feedReader->start($feedRepository->getFeeds());
+        $articlesPromise = $feedReader->downloadAll($feedRepository->getFeeds());
         /** @var Article[] $articles */
         $articles = $articlesPromise->wait();
 
@@ -60,6 +60,7 @@ class FeedReaderCommand extends Command
     }
 
     /**
+     * @todo kick this out to some DI and implement CommandLoaderInterface
      * @return FeedReader
      */
     private function buildFeedReader(): FeedReader

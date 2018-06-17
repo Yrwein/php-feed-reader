@@ -7,6 +7,9 @@ namespace FeedReader\Parser;
 use FeedReader\Model\Article;
 use FeedReader\Model\Feed;
 
+/**
+ * Responsible for converting feed response to an array of Article objects.
+ */
 interface FeedParser
 {
     /**

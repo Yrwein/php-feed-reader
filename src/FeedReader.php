@@ -9,6 +9,9 @@ use FeedReader\Model\Feed;
 use function GuzzleHttp\Promise\all;
 use GuzzleHttp\Promise\PromiseInterface;
 
+/**
+ * FeedReader will download all feeds and will notify about download progress via events.
+ */
 class FeedReader
 {
     /**
@@ -33,7 +36,6 @@ class FeedReader
 
     /**
      * @param FeedDownloadClient $feedDownloadClient
-     * @param Feed[] $feeds
      */
     public function __construct(FeedDownloadClient $feedDownloadClient)
     {
@@ -41,14 +43,16 @@ class FeedReader
     }
 
     /**
-     * Starts download
+     * Starts download of all feeds and returns promise for all sorted articles.
+     * Promise will not be rejected on error. Use setOnFailedDownload to be notified about problematic feeds.
+     *
      * @param $feeds Feed[]
-     * @return PromiseInterface
+     * @return PromiseInterface - will resolve to array of sorted articles
      */
-    public function start(array $feeds): PromiseInterface
+    public function downloadAll(array $feeds): PromiseInterface
     {
         $promises = $this->startDownloadOfAllFeeds($feeds);
-        return $this->notifyOnFinishWithSortedResults($promises);
+        return $this->promiseForAllSortedResults($promises);
     }
 
     /**
@@ -111,7 +115,7 @@ class FeedReader
      * @param PromiseInterface[] $promises
      * @return PromiseInterface
      */
-    private function notifyOnFinishWithSortedResults(array $promises): PromiseInterface
+    private function promiseForAllSortedResults(array $promises): PromiseInterface
     {
         return all($promises)->then(function ($results) {
             $articles = array_merge(...$results);

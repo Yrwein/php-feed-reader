@@ -13,7 +13,7 @@ use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7\Response;
 
 /**
- * Downloads feeds asynchronously.
+ * Downloads given feed asynchronously.
  */
 class FeedDownloadClient
 {
@@ -49,8 +49,8 @@ class FeedDownloadClient
         $downloadPromise = $this->client->getAsync($feed->getUrl());
         $articlePromise = $downloadPromise->then(
             function (Response $response) use ($feed) {
-                $xml = (string) $response->getBody();
-                return $this->feedParser->parseFeedToArticles($feed, $xml);
+                $httpResponseBody = (string) $response->getBody();
+                return $this->feedParser->parseFeedToArticles($feed, $httpResponseBody);
             }
         );
         return $articlePromise;
