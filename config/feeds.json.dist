@@ -1,0 +1,18 @@
+[
+  {
+    "name": "PHP.net",
+    "url": "http://php.net/feed.atom"
+  },
+  {
+    "name": "Martin Fowler",
+    "url": "https://martinfowler.com/feed.atom"
+  },
+  {
+    "name": "Uncle Bob - Clean Coder",
+    "url": "http://blog.cleancoder.com/atom.xml"
+  },
+  {
+    "name": "Symfony",
+    "url": "https://feeds.feedburner.com/symfony/blog"
+  }
+]

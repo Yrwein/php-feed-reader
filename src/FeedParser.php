@@ -38,7 +38,10 @@ class FeedParser
 
         $articles = [];
         foreach ($xmlArticles as $xmlArticle) {
-            $published = \DateTime::createFromFormat(\DateTime::RFC3339, (string) $xmlArticle->published, $utc);
+            $published = \DateTime::createFromFormat(\DateTime::RFC3339, (string) $xmlArticle->updated, $utc);
+            if (!$published) {
+                $published = \DateTime::createFromFormat(\DateTime::RFC3339, (string) $xmlArticle->published, $utc);
+            }
             $articles[] = new Article(
                 (string) $xmlArticle->title,
                 $published,
