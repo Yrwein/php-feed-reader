@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+    <channel>
+        <title>OMG! Ubuntu!</title>
+        <link>https://www.omgubuntu.co.uk</link>
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml"
+                     href="http://feeds.feedburner.com/d0od"/>
+        <description>An online Ubuntu magazine bringing you the latest Ubuntu news, apps, interview and reviews.
+            Daily.
+        </description>
+        <language>en-US</language>
+        <image>
+            <link>https://www.omgubuntu.co.uk</link>
+            <url>https://www.omgubuntu.co.uk/wp-content/uploads/2012/07/omg-ubuntu-logo-32x32.jpg</url>
+            <title>OMG! Ubuntu!</title>
+            <width>32</width>
+            <height>32</height>
+        </image>
+        <lastBuildDate>Sat, 16 Jun 2018 06:21:06 PDT</lastBuildDate>
+        <generator>https://wordpress.org/?v=4.9.6</generator>
+        <sy:updatePeriod xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">hourly</sy:updatePeriod>
+        <sy:updateFrequency xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">1</sy:updateFrequency>
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml"
+                     href="http://feeds.feedburner.com/d0od"/>
+        <feedburner:info uri="d0od"/>
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/"/>
+        <xhtml:meta xmlns:xhtml="http://www.w3.org/1999/xhtml" name="robots" content="noindex"/>
+        <meta xmlns="http://pipes.yahoo.com" name="pipes" content="noprocess"/>
+        <feedburner:emailServiceId>d0od</feedburner:emailServiceId>
+        <feedburner:feedburnerHostname>https://feedburner.google.com</feedburner:feedburnerHostname>
+        <item>
+            <title>You Can Now Play ‘TrackMania Nations Forever’ on Ubuntu</title>
+            <link>http://feedproxy.google.com/~r/d0od/~3/JOmHycflsEs/trackmania-nations-forever-ubuntu-snap</link>
+            <category>Download</category>
+            <category>Gaming</category>
+            <category>racing</category>
+            <category>snap apps</category>
+            <category>trackmania</category>
+            <category>wine</category>
+            <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joey Sneddon</dc:creator>
+            <pubDate>Fri, 15 Jun 2018 14:37:03 PDT</pubDate>
+            <guid isPermaLink="false">https://www.omgubuntu.co.uk/?p=132305</guid>
+            <description>&lt;p&gt;&lt;img width="406" height="232"
+                src="https://www.omgubuntu.co.uk/wp-content/uploads/2018/06/trackmania-406x232.jpg"
+                class="attachment-post-list size-post-list wp-post-image" alt="trackmania nations forever on ubuntu"
+                srcset="https://www.omgubuntu.co.uk/wp-content/uploads/2018/06/trackmania-406x232.jpg 406w,
+                https://www.omgubuntu.co.uk/wp-content/uploads/2018/06/trackmania-350x200.jpg 350w,
+                https://www.omgubuntu.co.uk/wp-content/uploads/2018/06/trackmania-840x480.jpg 840w" sizes="(max-width:
+                406px) 100vw, 406px" /&gt;A popular PC racing game has sped its way on to the Ubuntu Snap store — and I
+                think you&amp;#8217;re gonna dig it. It&amp;#8217;s called &amp;#8216;TrackMania Nations Forever&amp;#8217;
+                (TMNF) and, for some of you, it will need zero introduction. First released back in 2008 — a decade ago
+                — TrackMania Nations Forever built a solid reputation [&amp;#8230;]&lt;/p&gt;
+                &lt;p&gt;This post, &lt;a rel="nofollow"
+                href="https://www.omgubuntu.co.uk/2018/06/trackmania-nations-forever-ubuntu-snap"&gt;You Can Now Play
+                &amp;#8216;TrackMania Nations Forever&amp;#8217; on Ubuntu&lt;/a&gt;, was written by &lt;a
+                rel="nofollow" href="https://www.omgubuntu.co.uk/author/d0od"&gt;Joey Sneddon&lt;/a&gt; and first
+                appeared on &lt;a rel="nofollow" href="https://www.omgubuntu.co.uk"&gt;OMG! Ubuntu!&lt;/a&gt;.&lt;/p&gt;&lt;div
+                class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/d0od?a=JOmHycflsEs:XWV-r1_LtZE:wBxX2hOkimM"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?i=JOmHycflsEs:XWV-r1_LtZE:wBxX2hOkimM" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/d0od?a=JOmHycflsEs:XWV-r1_LtZE:I9og5sOYxJI"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?d=I9og5sOYxJI" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+                href="http://feeds.feedburner.com/~ff/d0od?a=JOmHycflsEs:XWV-r1_LtZE:qj6IDK7rITs"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+                href="http://feeds.feedburner.com/~ff/d0od?a=JOmHycflsEs:XWV-r1_LtZE:V_sGLiPBpWU"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?i=JOmHycflsEs:XWV-r1_LtZE:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/d0od?a=JOmHycflsEs:XWV-r1_LtZE:gIN9vFwOqvQ"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?i=JOmHycflsEs:XWV-r1_LtZE:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/d0od?a=JOmHycflsEs:XWV-r1_LtZE:yIl2AUoC8zA"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/d0od/~4/JOmHycflsEs" height="1" width="1"
+                alt=""/&gt;
+            </description>
+            <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+                https://www.omgubuntu.co.uk/2018/06/trackmania-nations-forever-ubuntu-snap/feed
+            </wfw:commentRss>
+            <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">0</slash:comments>
+            <feedburner:origLink>https://www.omgubuntu.co.uk/2018/06/trackmania-nations-forever-ubuntu-snap
+            </feedburner:origLink>
+        </item>
+        <item>
+            <title>GPD Pocket 2 Launches This Summer with a Faster Processor</title>
+            <link>http://feedproxy.google.com/~r/d0od/~3/05q1jgMWKak/gpd-pocket-2-specs-release-date</link>
+            <category>Hardware</category>
+            <category>News</category>
+            <category>GPD</category>
+            <category>gpd pocket</category>
+            <category>gpd pocket 2</category>
+            <category>indiegogo</category>
+            <category>laptops</category>
+            <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joey Sneddon</dc:creator>
+            <pubDate>Fri, 15 Jun 2018 06:40:59 PDT</pubDate>
+            <guid isPermaLink="false">https://www.omgubuntu.co.uk/?p=132183</guid>
+            <description>&lt;p&gt;&lt;img width="406" height="232"
+                src="https://www.omgubuntu.co.uk/wp-content/uploads/2018/06/gpd-pocket-2-laptop-406x232.jpg"
+                class="attachment-post-list size-post-list wp-post-image" alt="The GPD Pocket 2 Laptop"
+                srcset="https://www.omgubuntu.co.uk/wp-content/uploads/2018/06/gpd-pocket-2-laptop-406x232.jpg 406w,
+                https://www.omgubuntu.co.uk/wp-content/uploads/2018/06/gpd-pocket-2-laptop-350x200.jpg 350w,
+                https://www.omgubuntu.co.uk/wp-content/uploads/2018/06/gpd-pocket-2-laptop-840x480.jpg 840w"
+                sizes="(max-width: 406px) 100vw, 406px" /&gt;Remember that tiny 7-inch laptop we collectively cooed over
+                last year? Well, an updated model with slimmer bezels and a faster CPU is on the way. The GPD Pocket 2
+                builds on the things the first-gen model got right, like it high-res screen, high-end build quality, and
+                highly-portable form factor. But there are also a [&amp;#8230;]&lt;/p&gt;
+                &lt;p&gt;This post, &lt;a rel="nofollow"
+                href="https://www.omgubuntu.co.uk/2018/06/gpd-pocket-2-specs-release-date"&gt;GPD Pocket 2 Launches This
+                Summer with a Faster Processor&lt;/a&gt;, was written by &lt;a rel="nofollow"
+                href="https://www.omgubuntu.co.uk/author/d0od"&gt;Joey Sneddon&lt;/a&gt; and first appeared on &lt;a
+                rel="nofollow" href="https://www.omgubuntu.co.uk"&gt;OMG! Ubuntu!&lt;/a&gt;.&lt;/p&gt;&lt;div
+                class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/d0od?a=05q1jgMWKak:nYmy-a7gtwI:wBxX2hOkimM"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?i=05q1jgMWKak:nYmy-a7gtwI:wBxX2hOkimM" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/d0od?a=05q1jgMWKak:nYmy-a7gtwI:I9og5sOYxJI"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?d=I9og5sOYxJI" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+                href="http://feeds.feedburner.com/~ff/d0od?a=05q1jgMWKak:nYmy-a7gtwI:qj6IDK7rITs"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+                href="http://feeds.feedburner.com/~ff/d0od?a=05q1jgMWKak:nYmy-a7gtwI:V_sGLiPBpWU"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?i=05q1jgMWKak:nYmy-a7gtwI:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/d0od?a=05q1jgMWKak:nYmy-a7gtwI:gIN9vFwOqvQ"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?i=05q1jgMWKak:nYmy-a7gtwI:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/d0od?a=05q1jgMWKak:nYmy-a7gtwI:yIl2AUoC8zA"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/d0od/~4/05q1jgMWKak" height="1" width="1"
+                alt=""/&gt;
+            </description>
+            <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+                https://www.omgubuntu.co.uk/2018/06/gpd-pocket-2-specs-release-date/feed
+            </wfw:commentRss>
+            <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">0</slash:comments>
+            <feedburner:origLink>https://www.omgubuntu.co.uk/2018/06/gpd-pocket-2-specs-release-date
+            </feedburner:origLink>
+        </item>
+        <item>
+            <title>How to Enable the Blur Effect in KDE Plasma 5.13</title>
+            <link>http://feedproxy.google.com/~r/d0od/~3/xrDewbOgPMs/how-to-enable-blur-kde-plasma-5-13</link>
+            <category>How To</category>
+            <category>blur</category>
+            <category>kde</category>
+            <category>plasma</category>
+            <category>plasma5</category>
+            <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Joey Sneddon</dc:creator>
+            <pubDate>Fri, 15 Jun 2018 05:47:47 PDT</pubDate>
+            <guid isPermaLink="false">https://www.omgubuntu.co.uk/?p=132388</guid>
+            <description>&lt;p&gt;&lt;img width="406" height="232"
+                src="https://www.omgubuntu.co.uk/wp-content/uploads/2018/06/kde-plasma-menu-blur-2-406x232.png"
+                class="attachment-post-list size-post-list wp-post-image" alt=""
+                srcset="https://www.omgubuntu.co.uk/wp-content/uploads/2018/06/kde-plasma-menu-blur-2-406x232.png 406w,
+                https://www.omgubuntu.co.uk/wp-content/uploads/2018/06/kde-plasma-menu-blur-2-350x200.png 350w"
+                sizes="(max-width: 406px) 100vw, 406px" /&gt;The new blur effect in KDE Plasma 5.13 is wowing a lot of
+                people, us included, but a few of you have been in touch to ask how you can enable or configure the blur
+                on your own system. Plasma 5.13 should (as I understand it) come with the swish new gaussian blur effect
+                enabled by [&amp;#8230;]&lt;/p&gt;
+                &lt;p&gt;This post, &lt;a rel="nofollow"
+                href="https://www.omgubuntu.co.uk/2018/06/how-to-enable-blur-kde-plasma-5-13"&gt;How to Enable the Blur
+                Effect in KDE Plasma 5.13&lt;/a&gt;, was written by &lt;a rel="nofollow"
+                href="https://www.omgubuntu.co.uk/author/d0od"&gt;Joey Sneddon&lt;/a&gt; and first appeared on &lt;a
+                rel="nofollow" href="https://www.omgubuntu.co.uk"&gt;OMG! Ubuntu!&lt;/a&gt;.&lt;/p&gt;&lt;div
+                class="feedflare"&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/d0od?a=xrDewbOgPMs:Y_roPqfbbXQ:wBxX2hOkimM"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?i=xrDewbOgPMs:Y_roPqfbbXQ:wBxX2hOkimM" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/d0od?a=xrDewbOgPMs:Y_roPqfbbXQ:I9og5sOYxJI"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?d=I9og5sOYxJI" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+                href="http://feeds.feedburner.com/~ff/d0od?a=xrDewbOgPMs:Y_roPqfbbXQ:qj6IDK7rITs"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a
+                href="http://feeds.feedburner.com/~ff/d0od?a=xrDewbOgPMs:Y_roPqfbbXQ:V_sGLiPBpWU"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?i=xrDewbOgPMs:Y_roPqfbbXQ:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/d0od?a=xrDewbOgPMs:Y_roPqfbbXQ:gIN9vFwOqvQ"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?i=xrDewbOgPMs:Y_roPqfbbXQ:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;a href="http://feeds.feedburner.com/~ff/d0od?a=xrDewbOgPMs:Y_roPqfbbXQ:yIl2AUoC8zA"&gt;&lt;img
+                src="http://feeds.feedburner.com/~ff/d0od?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+                &lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/d0od/~4/xrDewbOgPMs" height="1" width="1"
+                alt=""/&gt;
+            </description>
+            <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+                https://www.omgubuntu.co.uk/2018/06/how-to-enable-blur-kde-plasma-5-13/feed
+            </wfw:commentRss>
+            <slash:comments xmlns:slash="http://purl.org/rss/1.0/modules/slash/">0</slash:comments>
+            <feedburner:origLink>https://www.omgubuntu.co.uk/2018/06/how-to-enable-blur-kde-plasma-5-13
+            </feedburner:origLink>
+        </item>
+    </channel>
+</rss>
