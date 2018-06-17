@@ -125,7 +125,6 @@ class FeedReaderTest extends TestCase
             $events[] = ['failed download', $feed->getName()];
         });
 
-
         /** @var Article[] $articles */
         $articles = $feedReader->start($feeds)->wait();
 

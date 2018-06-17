@@ -18,15 +18,22 @@ use GuzzleHttp\Psr7\Response;
 class FeedDownloadClient
 {
     /**
+     * @var FeedParser
+     */
+    private $feedParser;
+
+    /**
      * @var Client
      */
     private $client;
 
     /**
+     * @param FeedParser $feedParser
      * @param callable|null $guzzleHandler Allows mocking, defaults to CurlMultiHandler
      */
-    public function __construct(callable $guzzleHandler = null)
+    public function __construct(FeedParser $feedParser, callable $guzzleHandler = null)
     {
+        $this->feedParser = $feedParser;
         $handlerStack = HandlerStack::create($guzzleHandler ?: new CurlMultiHandler());
         $this->client = new Client([
             'handler' => $handlerStack,
@@ -43,34 +50,9 @@ class FeedDownloadClient
         $articlePromise = $downloadPromise->then(
             function (Response $response) {
                 $xml = (string) $response->getBody();
-                $articles = $this->mapResponseToArticles($xml);
-                return $articles;
+                return $this->feedParser->parseFeedToArticles($xml);
             }
         );
         return $articlePromise;
-    }
-
-    /**
-     * @param string $xml
-     * @return array
-     */
-    private function mapResponseToArticles(string $xml): array
-    {
-        $articles = [];
-        $simpleXml = new \SimpleXMLElement($xml);
-        $xmlArticles = ($simpleXml->entry->count() > 1) ? $simpleXml->entry : [$simpleXml->entry];
-
-        $utc = new \DateTimeZone('UTC');
-
-        foreach ($xmlArticles as $xmlArticle) {
-            $published = \DateTime::createFromFormat(\DateTime::RFC3339, (string) $xmlArticle->published, $utc);
-            $articles[] = new Article(
-                (string) $xmlArticle->title,
-                $published,
-                $xmlArticle->content->asXML()
-            );
-        }
-
-        return $articles;
     }
 }

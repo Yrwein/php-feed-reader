@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Tests;
 
 use FeedReader\FeedDownloadClient;
+use FeedReader\FeedParser;
 use FeedReader\Model\Article;
 use FeedReader\Model\Feed;
 use GuzzleHttp\Exception\ClientException;
@@ -16,10 +17,11 @@ class FeedDownloadClientTest extends TestCase
 {
     public function testDownloadArticles_ShouldReturnArrayOfArticleObjects()
     {
+        $feedParser = new FeedParser();
         $mockHandler = new MockHandler([
-            new Response(200, [], file_get_contents(ROOT_DIR . '/tests/_fixtures/php.net_feed.xml')),
+            new Response(200, [], file_get_contents(ROOT_DIR . '/tests/_fixtures/php.net.atom.xml')),
         ]);
-        $client = new FeedDownloadClient($mockHandler);
+        $client = new FeedDownloadClient($feedParser, $mockHandler);
 
         $promise = $client->downloadArticles(new Feed("test feed", "http://phpnet.feed.tom"));
         /** @var Article[] $articles */
@@ -43,10 +45,11 @@ class FeedDownloadClientTest extends TestCase
 
     public function testDownloadArticles_ShouldResolveToException_OnHttpError()
     {
+        $feedParser = new FeedParser();
         $mockHandler = new MockHandler([
             new Response(404, [], 'Not found'),
         ]);
-        $client = new FeedDownloadClient($mockHandler);
+        $client = new FeedDownloadClient($feedParser, $mockHandler);
 
         $promise = $client->downloadArticles(new Feed("test feed", "http://phpnet.feed.tom"));
 
